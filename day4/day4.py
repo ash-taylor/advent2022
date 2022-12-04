@@ -39,9 +39,3 @@ for line in lines:
         overlap += 1
 
 print(f"Part Two: {overlap}")
-
-
-
-# determine whether one pair fully contains the other. f
-
-# If so - increase count by 1
