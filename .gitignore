@@ -2,3 +2,4 @@ env
 aoc.py
 __pycache__
 .history/
+input.txt

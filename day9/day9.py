@@ -1,21 +1,32 @@
-with open ('input.txt', 'r') as f:
+with open ('test.txt', 'r') as f:
     lines = f.read().strip().splitlines()
 
 headDirection = ''
 headSteps = 0
 
-headStart = {
+headPos = {
     'x':0,
     'y':0
 }
 
-tailStart = {
+tailPos = {
     'x':0,
     'y':0
 }
 
 for line in lines:
-    headDirection = line[0]
-    print(headDirection)
-    headSteps = line[2]
-    print(headSteps)
+    # head
+    if line[0] == "U":
+        headPos["x"] += int(line[2])
+    elif line[0] == "D":
+        headPos["x"] +- int(line[2])
+    elif line[0] == "L":
+        headPos["y"] +- int(line[2])
+    else:
+        headPos["y"] += int(line[2])
+    
+    # tail
+
+    if headPos["x"] == tailPos["x"] + 2 or headPos["y"] == tailPos["y"] + 2
+    
+print(headPos)
