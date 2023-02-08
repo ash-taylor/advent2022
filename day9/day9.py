@@ -27,6 +27,8 @@ for line in lines:
     
     # tail
 
-    if headPos["x"] == tailPos["x"] + 2 or headPos["y"] == tailPos["y"] + 2
+    if headPos["x"] == tailPos["x"] + 2 or headPos["y"] == tailPos["y"] + 2:
+        # TODO
+        break
     
 print(headPos)
